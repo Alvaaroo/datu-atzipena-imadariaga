@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<hibernate-mapping schema="chinook">
+ <class entity-name="model.Track" name="model.Track" table="track">
+  <id column="TrackId" name="id"></id>
+  <property column="Name" name="name"/>
+  <property column="AlbumId" name="AlbumId"/>
+  <property column="MediaTypeId" name="MediaTypeId"/>
+  <property column="GenreId" name="GenreId"/>
+  <property column="Composer" name="Composer"/>
+  <property column="Milliseconds" name="Milliseconds"/>
+  <property column="Bytes" name="Bytes"/>
+  <property column="UnitPrice" name="UnitPrice"/>
+ </class>
+</hibernate-mapping>
